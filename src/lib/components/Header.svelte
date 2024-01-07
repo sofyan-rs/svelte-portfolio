@@ -1,8 +1,8 @@
 <script lang="ts">
   import CarBatteryIcon from "$lib/components/Icons/CarBatteryIcon.svelte";
 	import scrollElementToIdMinusHeight from "$lib/utils/scrollToElement";
-	import { ChevronsDown } from "lucide-svelte";
   import { onMount } from "svelte";
+	import AnimatedHamburger from "./AnimatedHamburger.svelte";
 
   let isScrolled = false;
   let showMenu = false;
@@ -46,9 +46,7 @@
 <header class:scroll={isScrolled} class="header fixed z-10 top-0 left-0 right-0 backdrop-blur-md">
   <div class='container mx-auto p-5 text-gray-200 flex justify-between items-center'>
     <CarBatteryIcon className='animate-pulse' />
-    <button aria-label="show menu" class="lg:hidden animate-pulse" on:click={() => showMenu = !showMenu}>
-      <ChevronsDown size={32} class={`text-gray-200 transition-all duration-300 ${showMenu && 'transform rotate-180'}`} />
-    </button>
+    <AnimatedHamburger open={showMenu} onClick={() => showMenu = !showMenu} />
     <div class='menu absolute top-[72px] left-0 right-0 bg-gray-900/90 flex flex-col items-start lg:bg-inherit lg:top-0 lg:w-auto lg:gap-5 lg:flex-row lg:relative' class:show={showMenu}>
       {#each menus as menu}
         <button on:click={() => scrollElement(menu.id)} class='container mx-auto p-4 w-full text-left lg:w-auto xl:p-2 text-gray-300 hover:text-blue-400'>{menu.name}</button>

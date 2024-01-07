@@ -30,7 +30,7 @@ export const toolsIUse = ['VSCode', 'Figma', 'Git', 'Postman'];
 export const myContacts = {
 	email: 'sofyan423@gmail.com',
 	phone: '+6289513190059',
-	discord: 'Sofyan#9087',
+	discord: 'https://discordapp.com/users/468028950749118465/',
 	linkedin: 'https://www.linkedin.com/in/sofyan-rudiana-syamsi/',
 	github: 'https://github.com/sofyan-rs',
 	instagram: 'https://www.instagram.com/sofyan_zr/'
