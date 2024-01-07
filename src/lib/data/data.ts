@@ -38,6 +38,26 @@ export const myContacts = {
 
 export const myProjects = [
 	{
+		title: 'Tantri Kitchen Display System',
+		type: 'Web Development',
+		description:
+			'Tantri Kitchen Display is a website designed for kitchen management, displaying real-time lists of orders currently being processed. It serves as an efficient tool for monitoring and coordinating kitchen activities during food preparation.',
+		image: 'tantri-kitchen-display.webp',
+		link: null,
+		git: null,
+		techUsed: ['Sveltekit', 'TailwindCSS', 'Tanstack Query']
+	},
+	{
+		title: 'SSD Finance',
+		type: 'Web Development',
+		description:
+			'SSD Finance is a website for managing financial and cashflow reports for the Sasana Digital Company. Created using ReactJS and AntDesign.',
+		image: 'sasana-finance.webp',
+		link: null,
+		git: null,
+		techUsed: ['ReactJS', 'TailwindCSS', 'Ant Design']
+	},
+	{
 		title: 'Tantri Inventory Scanner - Mobile Apps',
 		type: 'Mobile Application',
 		description:
