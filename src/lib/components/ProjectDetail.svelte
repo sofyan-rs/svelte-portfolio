@@ -28,12 +28,12 @@
             <span class="text-sm text-gray-500">{project.type}</span>
           </div>
           <div class="flex flex-col xl:flex-row gap-4">
-            <div class="w-full xl:w-[600px]  overflow-y-auto">
+            <div class="w-full xl:w-[600px] overflow-y-auto">
               <img src={'/ss-project/' + project.image} alt={project.title} class="w-full rounded-md" />
             </div>
             <div class="xl:w-[200px] border-l-2 border-gray-100 border-dashed pl-4">
               <span class="block mb-3 font-semibold">Tech Used</span>
-              <ul class="flex flex-wrap gap-1 text-sm">
+              <ul class="flex flex-wrap gap-1 text-sm mr-5 xl:mr-0">
                 {#each project.techUsed as tech}
                   <li class="px-2 py-1 rounded-sm bg-gray-100">{tech}</li>
                 {/each}
