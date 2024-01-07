@@ -5,5 +5,8 @@ export default defineConfig({
 	server: {
 		port: 3000
 	},
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	ssr: {
+		noExternal: ['tsparticles', '@tsparticles/slim', '@tsparticles/engine', '@tsparticles/svelte'] // add all tsparticles libraries here, they're not made for SSR, they're client only
+	}
 });

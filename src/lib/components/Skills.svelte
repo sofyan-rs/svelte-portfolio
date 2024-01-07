@@ -10,7 +10,7 @@
   let tools = toolsIUse;
 </script>
 
-<section id='skills'>
+<section id='skills' class="bg-white">
   <div class='container mx-auto px-5 py-24'>
     <h2 class='text-3xl lg:text-4xl font-semibold text-blue-900'>Skills</h2>
     <p class='text-lg mb-7'>Here are some of my skills</p>

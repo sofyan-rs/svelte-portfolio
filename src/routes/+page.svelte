@@ -8,6 +8,8 @@
 
 <Header />
 <About />
-<Skills />
-<Projects />
-<Footer />
+<div class='absolute left-0 right-0'>
+  <Skills />
+  <Projects />
+  <Footer />
+</div>

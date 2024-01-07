@@ -1,12 +1,32 @@
 <script lang="ts">
   import Typewriter from 'svelte-typewriter';
   import { aboutMe, myInfo } from "$lib/data/data";
+  import { particlesInit } from '@tsparticles/svelte';
+  import { loadSlim } from '@tsparticles/slim';
+	import { onMount } from 'svelte';
+	import { particlesConfig } from '$lib/data/particles';
 
   let roles = myInfo.roles;
+
+  let ParticlesComponent: any;
+  let config = particlesConfig;
+
+  let onParticlesLoaded = (event: any) => {
+		const particlesContainer = event.detail.particles;
+	};
+
+	void particlesInit(async (engine) => {
+		await loadSlim(engine);
+	});
+
+  onMount(async () => {
+		const module = await import('@tsparticles/svelte');
+		ParticlesComponent = module.default;
+	});  
 </script>
 
 <section id='home' class='relative bg-gradient-to-r from-gray-900 to-blue-950 text-gray-300'>
-  <div class='container mx-auto px-5 min-h-[100dvh] flex items-center'>
+  <div class='container mx-auto px-5 min-h-[100dvh] flex items-center relative overflow-hidden'>
     <div>
       <h1 class='text-blue-400 text-lg lg:text-2xl font-medium mb-1'>Hi, I am {myInfo.name}</h1>
       <Typewriter mode='loop' wordInterval={2000}>
@@ -16,6 +36,13 @@
       </Typewriter>
       <p class='text-base lg:text-lg text-gray-400 lg:max-w-3xl'>{aboutMe}</p>
     </div>
+    <svelte:component
+      this="{ParticlesComponent}"
+      id="tsparticles"
+      class="absolute top-0 left-0 w-full h-[100dvh]"
+      options="{config}"
+      on:particlesLoaded="{onParticlesLoaded}"
+    />
   </div>
   <div class="absolute bottom-10 left-0 right-0 flex justify-center">
     <div class="w-7 h-10 border-2 border-white/40 rounded-full flex justify-center pt-1">
