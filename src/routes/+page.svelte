@@ -8,8 +8,10 @@
 
 <Header />
 <About />
-<div class='absolute left-0 right-0'>
+<div class='absolute left-0 right-0 top-0'>
+  <div class="mt-[100dvh]">
   <Skills />
   <Projects />
   <Footer />
+  </div>
 </div>
