@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ExternalLink, FolderGit2 } from 'lucide-svelte';
 	import { Drawer } from 'vaul-svelte';
+  import Lazy from 'svelte-lazy';
 
   export let project: {
     title: string;
@@ -29,7 +30,9 @@
           </div>
           <div class="flex flex-col xl:flex-row gap-4">
             <div class="w-full xl:w-[600px] overflow-y-auto">
-              <img src={'/ss-project/' + project.image} alt={project.title} class="w-full rounded-md" />
+              <Lazy height={400}>
+                <img src={'/ss-project/' + project.image} alt={project.title} class="w-full rounded-md" />
+              </Lazy>
             </div>
             <div class="xl:w-[200px] border-l-2 border-gray-100 border-dashed pl-4">
               <span class="block mb-3 font-semibold">Tech Used</span>

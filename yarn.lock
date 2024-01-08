@@ -187,6 +187,30 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.0.tgz#9740a4d43a6603a692cfd8f1ca0aeb2c33f2a203"
   integrity sha512-T4jNeM6dMzXONGkSjk7+O+eFQTVbw7KHi5OYuvFaBer3Wcrmpwi6fHKcT/FdSf7boWC7H9eXTyYTFZOQdJ1AMA==
 
+"@formatjs/ecma402-abstract@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.18.0.tgz#e2120e7101020140661b58430a7ff4262705a2f2"
+  integrity sha512-PEVLoa3zBevWSCZzPIM/lvPCi8P5l4G+NXQMc/CjEiaCWgyHieUoo0nM7Bs0n/NbuQ6JpXEolivQ9pKSBHaDlA==
+  dependencies:
+    "@formatjs/intl-localematcher" "0.5.2"
+    tslib "^2.4.0"
+
+"@formatjs/intl-localematcher@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-localematcher/-/intl-localematcher-0.5.2.tgz#5fcf029fd218905575e5080fa33facdcb623d532"
+  integrity sha512-txaaE2fiBMagLrR4jYhxzFO6wEdEG4TPMqrzBAcbr4HFUYzH/YC+lg6OIzKCHm8WgDdyQevxbAAV1OgcXctuGw==
+  dependencies:
+    tslib "^2.4.0"
+
+"@formatjs/intl-segmenter@^11.5.3":
+  version "11.5.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-segmenter/-/intl-segmenter-11.5.3.tgz#9149927f222e78986ac0344792644fa7b798772c"
+  integrity sha512-J7ygJh9dWee26WUptaK4nwd4pZDm7axKRaYqZrc1aXZDQy7Xl+j/PdNkULvWfQTqietcC4iG9dQR5XxR/DFRCw==
+  dependencies:
+    "@formatjs/ecma402-abstract" "1.18.0"
+    "@formatjs/intl-localematcher" "0.5.2"
+    tslib "^2.4.0"
+
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.13.tgz#075dc9684f40a531d9b26b0822153c1e832ee297"
@@ -299,6 +323,11 @@
   version "1.0.0-next.24"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.24.tgz#58601079e11784d20f82d0585865bb42305c4df3"
   integrity sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==
+
+"@rodneylab/sveltekit-components@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@rodneylab/sveltekit-components/-/sveltekit-components-3.0.0.tgz#f70739f35b7a6bb94661815c4568c76ee9a2db22"
+  integrity sha512-/e0Y6osoB6WJiEbf5P1tvpyC8i+xV1NvajEMiCv398Z+U8Ts1toFnkKpUIqAm1h3Erqj4YtoHa15D6WNCmc4XA==
 
 "@rollup/rollup-android-arm-eabi@4.9.4":
   version "4.9.4"
@@ -2283,6 +2312,11 @@ svelte-hmr@^0.15.3:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.3.tgz#df54ccde9be3f091bf5f18fc4ef7b8eb6405fbe6"
   integrity sha512-41snaPswvSf8TJUhlkoJBekRrABDXDMdpNpT2tfHIv4JuhgvHqLMhEPGtaQn0BmbNSTkuz2Ed20DF2eHw0SmBQ==
 
+svelte-lazy@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/svelte-lazy/-/svelte-lazy-1.2.7.tgz#aa45ebdc5ed6159a4d2ebe818910e36470683e19"
+  integrity sha512-TvOP22pNsSKlCRsQIZ9mv1IAaEhSZFhezzhMO/kYuKUvX9VQALJvWHV5MOymn/pjeTeVuT4lE9g9y40uf0bNSw==
+
 svelte-preprocess@^5.1.0:
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-5.1.3.tgz#7682239fe53f724c845b53026816fdfe15d028f9"
@@ -2294,10 +2328,12 @@ svelte-preprocess@^5.1.0:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-typewriter@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/svelte-typewriter/-/svelte-typewriter-3.2.2.tgz#a46fa89e4924e620729f6313d1b634fa1f392d0b"
-  integrity sha512-JpJCLuL3fjw5R6jR5YQPQERXtxh65fFXBodW1ipde56wspiknteFiNMn+P0T5hhiU561a6DHXhN5ipsFKIB9hg==
+svelte-typewriter@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/svelte-typewriter/-/svelte-typewriter-3.2.3.tgz#bd32ad499b72664598b62dcca44c0b1196bca7d4"
+  integrity sha512-762k01kIU+IyXfe5f2MEYQ1yIfJZfueAEmJNbO36cxJG56/vciHiWacPQLnSECK/4cvlH/Ll1Mv6B45InMJ1zg==
+  dependencies:
+    "@formatjs/intl-segmenter" "^11.5.3"
 
 svelte@^4.2.7:
   version "4.2.8"
@@ -2441,6 +2477,11 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vanilla-lazyload@^17.8.5:
+  version "17.8.5"
+  resolved "https://registry.yarnpkg.com/vanilla-lazyload/-/vanilla-lazyload-17.8.5.tgz#d63ce6ec9caeb57b5db54bedebce9cb6d464b7f6"
+  integrity sha512-SQdQztlVUJqCbyU15zobpAcoTucCzdJiDIEfqinZDdwifhZxQ5H2j0BJfHlrFxi0lrVAdFBRsICH51YdPv18DQ==
 
 vaul-svelte@^0.0.4:
   version "0.0.4"
