@@ -14,7 +14,7 @@ export const particlesConfig = {
 		composite: 'destination-out',
 		cover: {
 			color: {
-				value: '#fff'
+				value: '#384c8f'
 			},
 			opacity: 1
 		},
@@ -135,7 +135,7 @@ export const particlesConfig = {
 				area: {
 					gradient: {
 						start: {
-							value: '#ffffff'
+							value: '#384c8f'
 						},
 						stop: {
 							value: '#000000'
@@ -183,7 +183,7 @@ export const particlesConfig = {
 			}
 		},
 		color: {
-			value: '#ffffff',
+			value: '#384c8f',
 			animation: {
 				h: {
 					count: 0,
@@ -458,7 +458,7 @@ export const particlesConfig = {
 		links: {
 			blink: false,
 			color: {
-				value: '#ffffff'
+				value: '#384c8f'
 			},
 			consent: false,
 			distance: 150,
