@@ -34,8 +34,8 @@ export const particlesConfig = {
 		detectsOn: 'window',
 		events: {
 			onClick: {
-				enable: true,
-				mode: 'push'
+				enable: false
+				// mode: 'push'
 			},
 			onDiv: {
 				selectors: [],
