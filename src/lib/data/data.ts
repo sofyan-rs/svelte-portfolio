@@ -4,7 +4,7 @@ export const myInfo = {
 };
 
 export const aboutMe =
-	'I’m graduated from Electronics Engineering ⚡, but because my passion now currently working as Frontend & Mobile Developer 👨‍💻. I’m usually make project using React, Next.js, Svelte, and React Native.';
+	'I’m graduated from Electronics Engineering ⚡, but because my passion now currently working as Frontend & Mobile Developer 👨‍💻. I’m usually make project using React, Next.js, Svelte, FLutter, and React Native.';
 
 export const mySkills = {
 	programmingLanguages: ['Javascript', 'Typescript', 'PHP', 'Python', 'SQL', 'C++', 'Dart'],
