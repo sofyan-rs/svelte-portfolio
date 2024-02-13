@@ -38,6 +38,16 @@ export const myContacts = {
 
 export const myProjects = [
 	{
+		title: 'BacaKomik V2 - Mobile Apps',
+		type: 'Mobile Application',
+		description:
+			'BacaKomik is a mobile application for reading manga that I create after learning Dart & Flutter.',
+		image: 'bacakomik-app-v2.webp',
+		link: 'https://github.com/sofyan-rs/bacakomik-app-release/releases',
+		git: 'https://github.com/sofyan-rs/bacakomik-app-release',
+		techUsed: ['Flutter', 'Bloc', 'Firebase']
+	},
+	{
 		title: 'Tantri Kitchen Display System',
 		type: 'Web Development',
 		description:
