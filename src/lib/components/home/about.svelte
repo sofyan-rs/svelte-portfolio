@@ -18,7 +18,7 @@
 
 <section id="home" class="relative bg-gradient-to-r from-neutral-900 to-blue-950 text-neutral-300">
 	<div class="relative container mx-auto flex min-h-[100dvh] items-center overflow-hidden px-5">
-		<div>
+		<div class="z-20">
 			<h1 class="mb-1 text-lg font-medium text-blue-500 lg:text-2xl">Hi, I am {myInfo.name}</h1>
 			<Typewriter mode="loop" wordInterval={2000}>
 				{#each roles as role}
