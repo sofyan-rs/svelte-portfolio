@@ -10,5 +10,5 @@
 	<meta name="description" content="Sofyan Rudiana Syamsi - Portfolio" />
 </svelte:head>
 
-<ModeWatcher />
+<ModeWatcher defaultMode="light" />
 {@render children()}
