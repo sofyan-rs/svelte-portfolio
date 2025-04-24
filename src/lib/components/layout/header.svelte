@@ -45,7 +45,7 @@
 	];
 </script>
 
-<header class:scroll={isScrolled} class="header fixed top-0 right-0 left-0 z-10 backdrop-blur-md">
+<header class:scroll={isScrolled} class="header fixed top-0 right-0 left-0 z-30 backdrop-blur-md">
 	<div class="container mx-auto flex items-center justify-between p-5 text-neutral-200">
 		<CarBatteryIcon className="animate-pulse" />
 		<div class="flex flex-row-reverse items-center gap-3 lg:flex-row lg:gap-5">
