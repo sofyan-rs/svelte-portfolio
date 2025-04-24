@@ -1,17 +1,17 @@
 <script lang="ts">
-  import Header from "$lib/components/Header.svelte";
-	import About from "$lib/components/About.svelte";
-  import Skills from "$lib/components/Skills.svelte";
-  import Footer from "$lib/components/Footer.svelte";
-	import Projects from "$lib/components/Projects.svelte";
+	import About from '$lib/components/home/about.svelte';
+	import Projects from '$lib/components/home/projects.svelte';
+	import Skills from '$lib/components/home/skills.svelte';
+	import Footer from '$lib/components/layout/footer.svelte';
+	import Header from '$lib/components/layout/header.svelte';
 </script>
 
 <Header />
 <About />
-<div class='absolute left-0 right-0 top-0'>
-  <div class="mt-[100dvh]">
-    <Skills />
-    <Projects />
-    <Footer />
-  </div>
+<div class="absolute top-0 right-0 left-0">
+	<div class="mt-[100dvh]">
+		<Skills />
+		<Projects />
+		<Footer />
+	</div>
 </div>

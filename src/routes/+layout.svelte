@@ -1,15 +1,14 @@
-<script>
-// @ts-nocheck
-  import "../app.css";
+<script lang="ts">
+	import { ModeWatcher } from 'mode-watcher';
+	import '../app.css';
+
+	let { children } = $props();
 </script>
 
 <svelte:head>
-  <title>Sofyan RS - My Portfolio</title>
-  <meta name="description" content="Sofyan Rudiana Syamsi - Portfolio" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin='true'>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Sofyan RS - My Portfolio</title>
+	<meta name="description" content="Sofyan Rudiana Syamsi - Portfolio" />
 </svelte:head>
 
-<slot />
+<ModeWatcher />
+{@render children()}

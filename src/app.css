@@ -1,23 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* html {
-	scroll-behavior: smooth;
-} */
+:root {
+	--cursor-color: #fff;
+	--cursor-width: 2px;
+}
 
 body {
 	font-family: 'JetBrains Mono', monospace;
+}
+
+button {
+	@apply cursor-pointer;
 }
 
 *::-webkit-scrollbar {
 	@apply w-[6px];
 }
 *::-webkit-scrollbar-track {
-	@apply bg-gray-100;
+	@apply bg-neutral-200;
 }
 *::-webkit-scrollbar-thumb {
-	@apply bg-gray-300;
+	@apply bg-blue-900;
+}
+.dark *::-webkit-scrollbar-track {
+	@apply bg-neutral-700;
 }
 
 @keyframes scroll {
@@ -32,4 +39,50 @@ body {
 		transform: translateY(15px);
 		opacity: 0;
 	}
+}
+
+.header {
+	@apply bg-blue-950/30;
+}
+.header.scroll {
+	@apply bg-blue-950/90;
+}
+.menu {
+	@apply max-h-0 overflow-hidden transition-all duration-500 lg:max-h-[200px];
+}
+.menu.show {
+	@apply max-h-[calc(100dvh-72px)];
+}
+
+.scrolling {
+	@apply h-2 w-[3px] rounded-full bg-white/80;
+	animation-name: scroll;
+	animation-duration: 1.5s;
+	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+	animation-iteration-count: infinite;
+}
+
+.project-card:hover img {
+	@apply scale-110;
+}
+.project-card:hover .show-detail {
+	@apply opacity-100;
+}
+
+.load-more .icon {
+	@apply max-w-0 -rotate-90 animate-pulse overflow-hidden transition-all;
+}
+.load-more:hover .icon {
+	@apply max-w-5 rotate-0;
+}
+
+.skill-card .list {
+	@apply max-h-0 overflow-hidden transition-all duration-300;
+}
+.skill-card .list.active {
+	@apply max-h-96;
+}
+.skill-card .title.active,
+.skill-card:hover .title {
+	@apply bg-blue-950 text-white transition-all;
 }
