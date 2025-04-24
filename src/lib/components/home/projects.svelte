@@ -12,7 +12,9 @@
 
 <section id="projects" class="bg-neutral-100/70 dark:bg-neutral-800/70">
 	<div class="container mx-auto px-5 py-24 text-neutral-800 dark:text-neutral-200">
-		<h2 class="text-3xl font-semibold text-blue-900 lg:text-4xl dark:text-blue-500">My Projects</h2>
+		<h2 class="text-3xl font-semibold text-blue-900 lg:text-4xl dark:text-blue-500">
+			My Projects <span class="text-xl">[プロジェクト]</span>
+		</h2>
 		<p class="mb-10 text-lg">Here are some of my projects</p>
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
 			{#each currentProjects as project}

@@ -4,7 +4,7 @@ export const myInfo = {
 };
 
 export const aboutMe =
-	"I'm graduated from Electronics Engineering ⚡, but because my passion now currently working as Mobile & Frontend Developer 👨‍💻. I'm usually make project using React Native, Flutter, SwiftUI, ReactJS, Next.js, and Svelte.";
+	"I'm currently working as a Mobile Developer 📱 at a Digital Marketing & IT Solutions company 💼. My primary focus is on mobile application development using React Native ⚛️ and Flutter 💙. In addition to mobile platforms, I'm also skilled in building responsive and dynamic web interfaces using modern frontend frameworks such as ReactJS ⚛️, VueJS 🖖, Next.js 🚀, and Svelte 🔥. With a strong passion for crafting seamless user experiences 🎨✨, I strive to blend functionality with elegant design in every project I work on. 💻🌟";
 
 export const mySkills = {
 	programmingLanguages: ['Typescript', 'Dart', 'Javascript', 'Swift', 'PHP'],

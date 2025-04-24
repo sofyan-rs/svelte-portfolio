@@ -12,7 +12,7 @@
 	<div class="container mx-auto p-5 text-neutral-600 dark:text-neutral-300">
 		<div class="my-14">
 			<h2 class="mb-3 text-2xl font-semibold text-blue-900 lg:text-3xl dark:text-blue-500">
-				Contact Me
+				Contact Me <span class="text-lg">[れんらく]</span>
 			</h2>
 			<p class="mb-5 xl:max-w-[750px]">
 				Open to collaboration on frontend or mobile development projects. Reach out via email or

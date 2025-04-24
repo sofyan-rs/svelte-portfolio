@@ -18,7 +18,7 @@
 		>
 			<!-- <Lazy height={250}> -->
 			<img
-				src={'/ss-project/' + project.image}
+				src={'/img/ss-project/' + project.image}
 				alt={project.title}
 				class="h-56 w-full object-cover object-top transition-all duration-500 md:h-44 lg:h-56 xl:h-48 2xl:h-56"
 				width={640}

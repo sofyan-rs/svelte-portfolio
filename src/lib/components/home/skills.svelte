@@ -11,7 +11,9 @@
 
 <section id="skills" class="bg-white/70 dark:bg-neutral-900/70">
 	<div class="container mx-auto px-5 py-24">
-		<h2 class="text-3xl font-semibold text-blue-900 lg:text-4xl dark:text-blue-500">Skills</h2>
+		<h2 class="text-3xl font-semibold text-blue-900 lg:text-4xl dark:text-blue-500">
+			Skills <span class="text-xl">[スキル]</span>
+		</h2>
 		<p class="mb-7 text-lg text-neutral-700 dark:text-neutral-300">Here are some of my skills</p>
 		<div class="grid grid-cols-1 gap-5 text-base md:grid-cols-2 xl:grid-cols-4">
 			<SkillCard title="Programming Languages" data={programming} />

@@ -18,14 +18,23 @@
 
 <section id="home" class="relative bg-gradient-to-r from-neutral-900 to-blue-950 text-neutral-300">
 	<div class="relative container mx-auto flex min-h-[100dvh] items-center overflow-hidden px-5">
-		<div class="z-20">
-			<h1 class="mb-1 text-lg font-medium text-blue-500 lg:text-2xl">Hi, I am {myInfo.name}</h1>
-			<Typewriter mode="loop" wordInterval={2000}>
-				{#each roles as role}
-					<h2 class="mb-3 text-3xl font-semibold lg:text-5xl">{role}</h2>
-				{/each}
-			</Typewriter>
-			<p class="text-base text-neutral-400 lg:max-w-3xl lg:text-lg">{aboutMe}</p>
+		<div class="z-20 flex items-center justify-between lg:gap-20">
+			<div class="">
+				<h1 class="mb-1 text-lg font-medium text-blue-500 lg:text-2xl">Hi, I am {myInfo.name}</h1>
+				<Typewriter mode="loop" wordInterval={2000}>
+					{#each roles as role}
+						<h2 class="mb-3 text-3xl font-semibold lg:text-5xl">{role}</h2>
+					{/each}
+				</Typewriter>
+				<p class="text-base text-neutral-400 lg:text-lg">{aboutMe}</p>
+			</div>
+			<div class="flex-none animate-pulse">
+				<img
+					src="/img/pp/tanaka-kun.jpg"
+					alt="Tanaka Kun"
+					class="pointer-events-none hidden h-56 w-56 rounded-full object-cover object-top md:block lg:h-96 lg:w-96"
+				/>
+			</div>
 		</div>
 		<Particles
 			id="tsparticles"
