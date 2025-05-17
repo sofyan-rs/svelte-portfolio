@@ -2,6 +2,35 @@ import type { ProjectType } from '$lib/types/project.type';
 
 export const myProjects: ProjectType[] = [
 	{
+		title: 'KanaChat',
+		type: 'Mobile Application',
+		description:
+			'KanaChat is An Open Source ChatBot Application using Google Vertex AI build with Flutter.',
+		image: 'kanachat.webp',
+		link: 'https://github.com/sofyan-rs/kanachat/releases',
+		git: 'https://github.com/sofyan-rs/kanachat',
+		techUsed: ['Flutter', 'Firebase', 'Google Vertex AI']
+	},
+	{
+		title: 'MyCalculator',
+		type: 'Mobile Application',
+		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
+		image: 'mycalculator.webp',
+		link: 'https://github.com/sofyan-rs/mycalculator/releases',
+		git: 'https://github.com/sofyan-rs/mycalculator',
+		techUsed: ['Flutter']
+	},
+	{
+		title: 'MarkNotes',
+		type: 'Mobile Application',
+		description:
+			'MarkNotes is An Open Source Simple Notes Application with markdown support build with Flutter.',
+		image: 'marknotes.webp',
+		link: 'https://github.com/sofyan-rs/marknotes/releases',
+		git: 'https://github.com/sofyan-rs/marknotes',
+		techUsed: ['Flutter']
+	},
+	{
 		title: 'Kana Quest',
 		type: 'Web Development',
 		description:
