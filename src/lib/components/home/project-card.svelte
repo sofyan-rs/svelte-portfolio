@@ -14,7 +14,7 @@
 		class="project-card overflow-hidden rounded-md bg-white shadow-sm transition-all hover:shadow-lg dark:bg-neutral-900"
 	>
 		<div
-			class="relative h-56 overflow-hidden border-b border-neutral-100 md:h-44 lg:h-56 xl:h-48 2xl:h-56"
+			class="relative h-56 overflow-hidden border-b border-neutral-100 md:h-44 lg:h-56 xl:h-48 2xl:h-56 dark:border-neutral-800"
 		>
 			<!-- <Lazy height={250}> -->
 			<img
