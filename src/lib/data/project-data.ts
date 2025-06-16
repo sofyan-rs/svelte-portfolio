@@ -41,6 +41,15 @@ export const myProjects: ProjectType[] = [
 		techUsed: ['Sveltekit', 'TailwindCSS']
 	},
 	{
+		title: 'Fenrir Realm',
+		type: 'Web Development',
+		description: 'Fenrir Realm is a portal for reading translated Novel created using SvelteKit.',
+		image: 'fenrir.webp',
+		link: 'https://fenrirealm.com/',
+		git: null,
+		techUsed: ['Sveltekit', 'TailwindCSS', 'ShadcnUI']
+	},
+	{
 		title: 'BacaKomik V2 - Mobile Apps',
 		type: 'Mobile Application',
 		description:
@@ -145,7 +154,7 @@ export const myProjects: ProjectType[] = [
 		type: 'Web Development',
 		description: 'Simple Pokedex website created using ReactJS and PokeAPI.',
 		image: 'react-pokedex-app.webp',
-		link: 'https://pokedex-kdevz.netlify.app/',
+		link: 'https://pokedex-kurodevz.netlify.app/',
 		git: 'https://github.com/sofyan-rs/pokedex-react',
 		techUsed: ['ReactJS', 'TailwindCSS']
 	},
