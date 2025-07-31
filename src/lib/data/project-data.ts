@@ -2,6 +2,35 @@ import type { ProjectType } from '$lib/types/project.type';
 
 export const myProjects: ProjectType[] = [
 	{
+		title: 'Okane Frontend',
+		type: 'Web Development',
+		description:
+			'Okane Frontend is a web application for Okane App, a personal finance management application. It is built using NextJS and ShadCN UI.',
+		image: 'okane.webp',
+		link: 'https://okane.sofyan.id',
+		git: 'https://github.com/sofyan-rs/fe-finance-nextjs',
+		techUsed: ['NextJS', 'TailwindCSS', 'ShadcnUI']
+	},
+	{
+		title: 'Okane Backend',
+		type: 'Backend Development',
+		description:
+			'Okane Backend is a backend service for Okane App, a personal finance management application. It is built using Bun, HonoJS, and PostgreSQL.',
+		image: 'okane-api.webp',
+		link: 'https://finance-tracker.apidog.io',
+		git: 'https://github.com/sofyan-rs/be-finance-honojs',
+		techUsed: ['Bun', 'HonoJS', 'PostgreSQL']
+	},
+	{
+		title: 'ManhwaIndo',
+		type: 'Website Development',
+		description: 'ManhwaIndo is a website for reading Manhwa, created using Wordpress.',
+		image: 'manhwaindo.webp',
+		link: 'https://stag.manhwaindo.com',
+		git: null,
+		techUsed: ['Wordpress']
+	},
+	{
 		title: 'KanaChat',
 		type: 'Mobile Application',
 		description:
