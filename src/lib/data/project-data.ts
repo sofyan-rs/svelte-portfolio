@@ -2,6 +2,16 @@ import type { ProjectType } from '$lib/types/project.type';
 
 export const myProjects: ProjectType[] = [
 	{
+		title: 'Moestream',
+		type: 'Mobile Application',
+		description:
+			'Moestream is a simple anime streaming app for Android and iOS. Browse series, pick sources, and resume where you left off—watchlist and history are stored only on the device.',
+		image: 'moestream.webp',
+		link: 'https://github.com/sofyan-rs/moestream/releases',
+		git: 'https://github.com/sofyan-rs/moestream',
+		techUsed: ['React Native', 'Expo', 'Uniwind', 'HeroUI']
+	},
+	{
 		title: 'Okane Frontend',
 		type: 'Web Development',
 		description:
