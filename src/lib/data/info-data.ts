@@ -3,8 +3,10 @@ export const myInfo = {
 	roles: ['Mobile Developer', 'Frontend Developer']
 };
 
-export const aboutMe =
-	"I'm currently working as a Mobile Developer at a Digital Marketing & IT Solutions company, where I focus on building high-performance and user-friendly mobile applications using React Native and Flutter. Beyond mobile development, I also have experience creating responsive and modern web applications with technologies like ReactJS, Svelte, VueJS, and Next.js. I'm passionate about crafting clean, scalable, and intuitive user experiences while combining functionality with visually appealing design. I enjoy exploring new technologies, improving development workflows, and continuously sharpening my skills as a developer.";
+export const aboutMe = [
+	"I'm currently working as a Mobile Developer at a Digital Marketing & IT Solutions company, where I focus on building high-performance and user-friendly mobile applications using React Native and Flutter. Beyond mobile development, I also have experience creating responsive and modern web applications with technologies like ReactJS, Svelte, VueJS, and Next.js.",
+	"I'm passionate about crafting clean, scalable, and intuitive user experiences while combining functionality with visually appealing design. I enjoy exploring new technologies, improving development workflows, and continuously sharpening my skills as a developer."
+];
 
 export const mySkills = {
 	programmingLanguages: ['Typescript', 'Dart', 'Javascript', 'Swift', 'PHP'],

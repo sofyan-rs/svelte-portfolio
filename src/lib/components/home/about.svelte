@@ -42,7 +42,7 @@
 	});
 </script>
 
-<section id="about" class="relative bg-gradient-to-r from-neutral-900 to-blue-950 text-neutral-300">
+<section id="about" class="relative bg-gradient-to-r from-zinc-900 to-blue-950 text-zinc-300">
 	<div class="relative container mx-auto flex min-h-[100dvh] items-center overflow-hidden px-5">
 		<div class="z-20 flex items-center justify-between lg:gap-20">
 			<div class="">
@@ -54,15 +54,15 @@
 						{/each}
 					</svelte:component>
 				{:else}
-					{#each roles as role (role)}
-						<h2 class="mb-3 text-3xl font-semibold lg:text-5xl">{role}</h2>
-					{/each}
+					<h2 class="mb-3 text-3xl font-semibold lg:text-5xl">{roles[0]}</h2>
 				{/if}
-				<p class="text-base text-neutral-400 lg:text-lg">{aboutMe}</p>
+				{#each aboutMe as about (about)}
+					<p class="pb-3 text-justify text-base text-zinc-400 lg:text-lg">{about}</p>
+				{/each}
 			</div>
 			<div class="flex-none animate-pulse">
 				<img
-					src="/img/pp/tanaka-kun.jpg"
+					src="/img/pp/tanaka-kun.webp"
 					alt="Tanaka Kun"
 					class="pointer-events-none hidden h-56 w-56 rounded-full object-cover object-top md:block lg:h-96 lg:w-96"
 				/>
