@@ -1,22 +1,20 @@
 <script lang="ts">
 	import Typewriter from 'svelte-typewriter';
 	import Particles, { particlesInit } from '@tsparticles/svelte';
+	import type { IOptions, RecursivePartial } from '@tsparticles/engine';
 	import { loadSlim } from '@tsparticles/slim';
 	import { particlesConfig } from '$lib/data/particles';
 	import { aboutMe, myInfo } from '$lib/data/info-data';
 
 	const roles = myInfo.roles;
-
-	let onParticlesLoaded = (event: any) => {
-		const particlesContainer = event.detail.particles;
-	};
+	const typedParticlesConfig = particlesConfig as RecursivePartial<IOptions>;
 
 	void particlesInit(async (engine) => {
 		await loadSlim(engine);
 	});
 </script>
 
-<section id="home" class="relative bg-gradient-to-r from-neutral-900 to-blue-950 text-neutral-300">
+<section id="about" class="relative bg-gradient-to-r from-neutral-900 to-blue-950 text-neutral-300">
 	<div class="relative container mx-auto flex min-h-[100dvh] items-center overflow-hidden px-5">
 		<div class="z-20 flex items-center justify-between lg:gap-20">
 			<div class="">
@@ -39,8 +37,7 @@
 		<Particles
 			id="tsparticles"
 			class="absolute top-0 left-0 h-[100dvh] w-full"
-			options={particlesConfig}
-			on:particlesLoaded={onParticlesLoaded}
+			options={typedParticlesConfig}
 		/>
 	</div>
 	<div class="absolute right-0 bottom-10 left-0 flex justify-center">

@@ -27,8 +27,8 @@
 
 	const menus = [
 		{
-			name: 'Home',
-			id: 'home'
+			name: 'About',
+			id: 'about'
 		},
 		{
 			name: 'Skills',
