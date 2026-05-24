@@ -21,15 +21,13 @@
 				src={'/img/ss-project/' + project.image}
 				alt={project.title}
 				class="h-56 w-full object-cover object-top transition-all duration-500 md:h-44 lg:h-56 xl:h-48 2xl:h-56"
+				loading="lazy"
+				decoding="async"
+				fetchpriority="low"
 				width={640}
 				height={400}
 			/>
 			<!-- </Lazy> -->
-			<!-- <div
-				class="show-detail absolute top-0 z-2 flex h-full w-full items-center justify-center bg-blue-950/40 opacity-0 backdrop-blur-sm transition-all"
-			>
-				<ProjectDetail {project} />
-			</div> -->
 		</div>
 		<div class="p-4">
 			<div class="flex items-start justify-between gap-4">

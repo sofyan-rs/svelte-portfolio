@@ -12,35 +12,6 @@ export const myProjects: ProjectType[] = [
 		techUsed: ['React Native', 'Expo', 'Uniwind', 'HeroUI']
 	},
 	{
-		title: 'Okane Frontend',
-		type: 'Web Development',
-		description:
-			'Okane Frontend is a web application for Okane App, a personal finance management application. It is built using NextJS and ShadCN UI.',
-		image: 'okane.webp',
-		link: 'https://okane.sofyan.id',
-		git: 'https://github.com/sofyan-rs/fe-finance-nextjs',
-		techUsed: ['NextJS', 'TailwindCSS', 'ShadcnUI']
-	},
-	{
-		title: 'Okane Backend',
-		type: 'Backend Development',
-		description:
-			'Okane Backend is a backend service for Okane App, a personal finance management application. It is built using Bun, HonoJS, and PostgreSQL.',
-		image: 'okane-api.webp',
-		link: 'https://finance-tracker.apidog.io',
-		git: 'https://github.com/sofyan-rs/be-finance-honojs',
-		techUsed: ['Bun', 'HonoJS', 'PostgreSQL']
-	},
-	{
-		title: 'ManhwaIndo',
-		type: 'Website Development',
-		description: 'ManhwaIndo is a website for reading Manhwa, created using Wordpress.',
-		image: 'manhwaindo.webp',
-		link: 'https://stag.manhwaindo.com',
-		git: null,
-		techUsed: ['Wordpress']
-	},
-	{
 		title: 'KanaChat',
 		type: 'Mobile Application',
 		description:
@@ -49,44 +20,6 @@ export const myProjects: ProjectType[] = [
 		link: 'https://github.com/sofyan-rs/kanachat/releases',
 		git: 'https://github.com/sofyan-rs/kanachat',
 		techUsed: ['Flutter', 'Firebase', 'Google Vertex AI']
-	},
-	{
-		title: 'MyCalculator',
-		type: 'Mobile Application',
-		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
-		image: 'mycalculator.webp',
-		link: 'https://github.com/sofyan-rs/mycalculator/releases',
-		git: 'https://github.com/sofyan-rs/mycalculator',
-		techUsed: ['Flutter']
-	},
-	{
-		title: 'MarkNotes',
-		type: 'Mobile Application',
-		description:
-			'MarkNotes is An Open Source Simple Notes Application with markdown support build with Flutter.',
-		image: 'marknotes.webp',
-		link: 'https://github.com/sofyan-rs/marknotes/releases',
-		git: 'https://github.com/sofyan-rs/marknotes',
-		techUsed: ['Flutter']
-	},
-	{
-		title: 'Kana Quest',
-		type: 'Web Development',
-		description:
-			'Kana Quest is a web to test your knowledge in Japanese Hiragana, Katakana, and Kanji.',
-		image: 'kana-quest.webp',
-		link: 'https://kana-quest.netlify.app/',
-		git: 'https://github.com/sofyan-rs/kana-quest',
-		techUsed: ['Sveltekit', 'TailwindCSS']
-	},
-	{
-		title: 'Fenrir Realm',
-		type: 'Web Development',
-		description: 'Fenrir Realm is a portal for reading translated Novel created using SvelteKit.',
-		image: 'fenrir.webp',
-		link: 'https://fenrirealm.com/',
-		git: null,
-		techUsed: ['Sveltekit', 'TailwindCSS', 'ShadcnUI']
 	},
 	{
 		title: 'BacaKomik V2 - Mobile Apps',
@@ -119,6 +52,35 @@ export const myProjects: ProjectType[] = [
 		techUsed: ['React Native', 'Nativewind']
 	},
 	{
+		title: 'Tantri - QR Menu Online Order',
+		type: 'Web Development',
+		description:
+			'Tantri QR Menu is a QR Menu Online Order for restaurants, cafes, and other culinary businesses. Created using using React.js and TailwindCSS.',
+		image: 'menu-tantri.webp',
+		link: 'https://menu.tantri.id/',
+		git: null,
+		techUsed: ['ReactJS', 'TailwindCSS']
+	},
+	{
+		title: 'MyCalculator',
+		type: 'Mobile Application',
+		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
+		image: 'mycalculator.webp',
+		link: 'https://github.com/sofyan-rs/mycalculator/releases',
+		git: 'https://github.com/sofyan-rs/mycalculator',
+		techUsed: ['Flutter']
+	},
+	{
+		title: 'MarkNotes',
+		type: 'Mobile Application',
+		description:
+			'MarkNotes is An Open Source Simple Notes Application with markdown support build with Flutter.',
+		image: 'marknotes.webp',
+		link: 'https://github.com/sofyan-rs/marknotes/releases',
+		git: 'https://github.com/sofyan-rs/marknotes',
+		techUsed: ['Flutter']
+	},
+	{
 		title: 'BacaKomik - Mobile Apps',
 		type: 'Mobile Application',
 		description:
@@ -129,15 +91,54 @@ export const myProjects: ProjectType[] = [
 		techUsed: ['React Native', 'Nativewind', 'Firebase']
 	},
 	{
-		title: 'Tantri - QR Menu Online Order',
+		title: 'Okane Frontend',
 		type: 'Web Development',
 		description:
-			'Tantri QR Menu is a QR Menu Online Order for restaurants, cafes, and other culinary businesses. Created using using React.js and TailwindCSS.',
-		image: 'menu-tantri.webp',
-		link: 'https://menu.tantri.id/',
-		git: null,
-		techUsed: ['ReactJS', 'TailwindCSS']
+			'Okane Frontend is a web application for Okane App, a personal finance management application. It is built using NextJS and ShadCN UI.',
+		image: 'okane.webp',
+		link: 'https://okane.sofyan.id',
+		git: 'https://github.com/sofyan-rs/fe-finance-nextjs',
+		techUsed: ['NextJS', 'TailwindCSS', 'ShadcnUI']
 	},
+	{
+		title: 'Okane Backend',
+		type: 'Backend Development',
+		description:
+			'Okane Backend is a backend service for Okane App, a personal finance management application. It is built using Bun, HonoJS, and PostgreSQL.',
+		image: 'okane-api.webp',
+		link: 'https://finance-tracker.apidog.io',
+		git: 'https://github.com/sofyan-rs/be-finance-honojs',
+		techUsed: ['Bun', 'HonoJS', 'PostgreSQL']
+	},
+	{
+		title: 'ManhwaIndo',
+		type: 'Website Development',
+		description: 'ManhwaIndo is a website for reading Manhwa, created using Wordpress.',
+		image: 'manhwaindo.webp',
+		link: 'https://stag.manhwaindo.com',
+		git: null,
+		techUsed: ['Wordpress']
+	},
+	{
+		title: 'Kana Quest',
+		type: 'Web Development',
+		description:
+			'Kana Quest is a web to test your knowledge in Japanese Hiragana, Katakana, and Kanji.',
+		image: 'kana-quest.webp',
+		link: 'https://kana-quest.netlify.app/',
+		git: 'https://github.com/sofyan-rs/kana-quest',
+		techUsed: ['Sveltekit', 'TailwindCSS']
+	},
+	{
+		title: 'Fenrir Realm',
+		type: 'Web Development',
+		description: 'Fenrir Realm is a portal for reading translated Novel created using SvelteKit.',
+		image: 'fenrir.webp',
+		link: 'https://fenrirealm.com/',
+		git: null,
+		techUsed: ['Sveltekit', 'TailwindCSS', 'ShadcnUI']
+	},
+
 	{
 		title: 'Tantri Kitchen Display System',
 		type: 'Web Development',
