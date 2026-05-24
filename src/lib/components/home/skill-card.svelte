@@ -27,7 +27,7 @@
 		</button>
 		<div class="list" class:active={showSkills === true}>
 			<ul class="flex flex-wrap gap-2 p-4 text-sm">
-				{#each data as item}
+				{#each data as item (item)}
 					<li
 						class="rounded bg-neutral-200/50 px-2 py-0.5 text-neutral-800 dark:bg-neutral-700/50 dark:text-neutral-200"
 					>

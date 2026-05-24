@@ -68,7 +68,7 @@
 			</div>
 			<p class="mt-2 text-sm text-neutral-500 dark:text-neutral-400">{project.description}</p>
 			<ul class="mt-3 flex flex-wrap gap-2 text-sm xl:mr-0">
-				{#each project.techUsed as tech}
+				{#each project.techUsed as tech (tech)}
 					<li class="rounded-sm bg-neutral-100 px-2 py-1 dark:bg-neutral-800">{tech}</li>
 				{/each}
 			</ul>

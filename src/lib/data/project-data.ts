@@ -159,26 +159,6 @@ export const myProjects: ProjectType[] = [
 		techUsed: ['ReactJS', 'TailwindCSS', 'Ant Design']
 	},
 	{
-		title: 'Tantri - Company Profile',
-		type: 'Web Development',
-		description:
-			'Tantri is a sub business of Sasana Digital which operates in the field of online order management system for restaurants, cafes, and other culinary businesses. Created using Next.js and TailwindCSS.',
-		image: 'tantri-id.webp',
-		link: 'https://tantri.id/',
-		git: null,
-		techUsed: ['Next.js', 'TailwindCSS']
-	},
-	{
-		title: 'Tantri - Super Admin Dashboard',
-		type: 'Web Development',
-		description:
-			'Tantri Super Admin is a Dashboard for manage all restaurants or cafes who registered in Tantri. Created using React.js and TailwindCSS.',
-		image: 'super-admin-tantri.webp',
-		link: null,
-		git: null,
-		techUsed: ['Next.js', 'TailwindCSS', 'Ant Design']
-	},
-	{
 		title: 'Tantri - POS System',
 		type: 'Web Development',
 		description:
@@ -187,41 +167,5 @@ export const myProjects: ProjectType[] = [
 		link: 'https://kasir.tantri.id/',
 		git: null,
 		techUsed: ['ReactJS', 'TailwindCSS']
-	},
-	{
-		title: 'Pokedex App',
-		type: 'Web Development',
-		description: 'Simple Pokedex website created using ReactJS and PokeAPI.',
-		image: 'react-pokedex-app.webp',
-		link: 'https://pokedex-kurodevz.netlify.app/',
-		git: 'https://github.com/sofyan-rs/pokedex-react',
-		techUsed: ['ReactJS', 'TailwindCSS']
-	},
-	{
-		title: 'Z-Stream',
-		type: 'Web Development',
-		description: 'Theme Wordpress for Streaming & Download Anime Website.',
-		image: 'z-stream.webp',
-		link: null,
-		git: null,
-		techUsed: ['Wordpress']
-	},
-	{
-		title: 'Z-Manga',
-		type: 'Web Development',
-		description: 'Theme Wordpress for Reading Manga Website.',
-		image: 'z-manga.webp',
-		link: null,
-		git: null,
-		techUsed: ['Wordpress']
-	},
-	{
-		title: 'Z-Novel',
-		type: 'Web Development',
-		description: 'Theme Wordpress for Reading Novel Website.',
-		image: 'z-novel.webp',
-		link: null,
-		git: null,
-		techUsed: ['Wordpress']
 	}
 ];

@@ -22,7 +22,7 @@
 			<div class="">
 				<h1 class="mb-1 text-lg font-medium text-blue-500 lg:text-2xl">Hi, I am {myInfo.name}</h1>
 				<Typewriter mode="loop" wordInterval={2000}>
-					{#each roles as role}
+					{#each roles as role (role)}
 						<h2 class="mb-3 text-3xl font-semibold lg:text-5xl">{role}</h2>
 					{/each}
 				</Typewriter>

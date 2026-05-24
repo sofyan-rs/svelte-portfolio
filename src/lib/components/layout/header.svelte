@@ -54,7 +54,7 @@
 				class="menu absolute top-[72px] right-0 left-0 flex flex-col items-start bg-neutral-900/90 lg:relative lg:top-0 lg:w-auto lg:flex-row lg:gap-5 lg:bg-inherit"
 				class:show={showMenu}
 			>
-				{#each menus as menu}
+				{#each menus as menu (menu.id)}
 					<button
 						onclick={() => scrollElement(menu.id)}
 						class="container mx-auto w-full p-4 text-left text-neutral-300 hover:text-blue-500 lg:w-auto xl:p-2"

@@ -17,7 +17,7 @@
 		</h2>
 		<p class="mb-10 text-lg">Here are some of my projects</p>
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-			{#each currentProjects as project}
+			{#each currentProjects as project (project.title)}
 				<ProjectCard {project} />
 			{/each}
 		</div>

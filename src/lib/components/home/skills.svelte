@@ -26,7 +26,7 @@
 				Tools I Use
 			</h3>
 			<ul class="mt-3 flex flex-wrap gap-x-5 gap-y-2">
-				{#each tools as tool}
+				{#each tools as tool (tool)}
 					<li class="font-medium text-neutral-500 dark:text-neutral-300">{tool}</li>
 				{/each}
 			</ul>
