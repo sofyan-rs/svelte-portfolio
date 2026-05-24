@@ -46,6 +46,7 @@
 								href={project.git}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="View project on Git"
 								class="flex items-center gap-2 rounded-sm border px-3 py-2 font-medium text-blue-900 transition-all hover:border-blue-900 hover:bg-blue-900 hover:text-neutral-100"
 							>
 								<FolderGit2 class="h-4 w-4" />
@@ -57,6 +58,7 @@
 								href={project.link}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Visit project link"
 								class="flex items-center gap-2 rounded-sm border px-3 py-2 font-medium text-blue-900 transition-all hover:border-blue-900 hover:bg-blue-900 hover:text-neutral-100"
 							>
 								<ExternalLink class="h-4 w-4" />
