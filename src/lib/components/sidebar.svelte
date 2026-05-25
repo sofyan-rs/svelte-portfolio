@@ -18,7 +18,7 @@
 	<div class="flex h-full flex-col justify-between">
 		<div>
 			<!-- Header -->
-			<div class="mb-8">
+			<div class="mb-8 anim-load anim-left" style="animation-delay: 0ms">
 				<h1
 					class="font-display mb-2 text-3xl leading-tight font-extrabold tracking-tight text-white uppercase"
 				>
@@ -36,7 +36,7 @@
 			</div>
 
 			<!-- Profile -->
-			<section class="mb-10">
+			<section class="mb-10 anim-load anim-left" style="animation-delay: 80ms">
 				<h2
 					class="mb-4 font-mono text-[10px] font-bold tracking-[0.2em] text-[#838383] uppercase"
 				>
@@ -56,7 +56,7 @@
 			</section>
 
 			<!-- Core Stack -->
-			<section class="mb-10">
+			<section class="mb-10 anim-load anim-left" style="animation-delay: 160ms">
 				<h2
 					class="mb-4 font-mono text-[10px] font-bold tracking-[0.2em] text-[#838383] uppercase"
 				>
@@ -75,7 +75,7 @@
 			</section>
 
 			<!-- Experience -->
-			<section class="mb-8">
+			<section class="mb-8 anim-load anim-left" style="animation-delay: 240ms">
 				<h2
 					class="mb-4 font-mono text-[10px] font-bold tracking-[0.2em] text-[#838383] uppercase"
 				>
@@ -113,7 +113,10 @@
 		</div>
 
 		<!-- Status -->
-		<div class="mt-4 flex items-center gap-3 border-t border-[#262626] pt-6 lg:pt-8">
+		<div
+			class="mt-4 flex items-center gap-3 border-t border-[#262626] pt-6 anim-load anim-left lg:pt-8"
+			style="animation-delay: 320ms"
+		>
 			<div class="h-2 w-2 animate-[pulse_1.5s_infinite] rounded-full bg-green-500"></div>
 
 			<p class="font-mono text-[10.5px] tracking-wider text-[#838383] uppercase">

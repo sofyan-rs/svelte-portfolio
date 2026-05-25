@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { Sparkles } from 'lucide-svelte';
+	import { reveal } from '$lib/utils/reveal';
 </script>
 
 <section
+	use:reveal
 	class="relative mb-10 overflow-hidden rounded-xl border border-[#262626] bg-[#111113] p-6 md:p-8"
 >
 	<div

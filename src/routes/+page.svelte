@@ -10,6 +10,7 @@
 	import PageFooter from '$lib/components/page-footer.svelte';
 
 	import { FileCode2 } from 'lucide-svelte';
+	import { reveal } from '$lib/utils/reveal';
 
 	let searchQuery = $state('');
 	let selectedType = $state<'All' | 'Mobile' | 'Web' | 'Backend'>('All');
@@ -51,10 +52,7 @@
 	const hasMore = $derived(visibleCount < filteredProjects.length);
 
 	$effect(() => {
-		// reset when any filter changes
-		searchQuery;
-		selectedType;
-		selectedTech;
+		void [searchQuery, selectedType, selectedTech]; // track filter deps
 		visibleCount = 6;
 	});
 
@@ -73,6 +71,7 @@
 	<main class="flex max-w-7xl flex-1 flex-col bg-[#0a0a0b] p-6 md:p-10">
 		<!-- Header -->
 		<div
+			use:reveal
 			class="mb-10 flex flex-col items-start justify-between gap-3 border-b border-[#262626] pb-6 sm:flex-row sm:items-end"
 		>
 			<div>
@@ -90,23 +89,29 @@
 			</p>
 		</div>
 
-		<StackExplorer bind:selectedTech />
+		<div use:reveal={{ delay: 60 }}>
+			<StackExplorer bind:selectedTech />
+		</div>
 
-		<ProjectFilters
-			bind:selectedType
-			bind:searchQuery
-			{totalProjectsCount}
-			{mobileProjectsCount}
-			{webProjectsCount}
-			{backendProjectsCount}
-		/>
+		<div use:reveal={{ delay: 120 }}>
+			<ProjectFilters
+				bind:selectedType
+				bind:searchQuery
+				{totalProjectsCount}
+				{mobileProjectsCount}
+				{webProjectsCount}
+				{backendProjectsCount}
+			/>
+		</div>
 
 		<!-- Projects -->
 		<section class="mb-14 flex-1">
 			{#if filteredProjects.length > 0}
 				<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-					{#each visibleProjects as project (project.title)}
-						<ProjectCard {project} />
+					{#each visibleProjects as project, i (project.title)}
+						<div use:reveal={{ delay: i * 80, threshold: 0.05 }}>
+							<ProjectCard {project} />
+						</div>
 					{/each}
 				</div>
 
