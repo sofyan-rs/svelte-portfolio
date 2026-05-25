@@ -64,7 +64,7 @@
 
 	const downloadResume = () => {
 		const text = `SOFYAN R. S.
-Mobile & Frontend Architect
+Mobile & Frontend Developer
 Bandung, Indonesia
 
 Experience:
@@ -112,7 +112,7 @@ Skills:
 					</h1>
 
 					<p class="mb-1 block font-mono text-[11px] tracking-widest text-blue-400 uppercase">
-						Mobile & Frontend Architect
+						Mobile & Frontend Developer
 					</p>
 
 					<span class="inline-flex items-center gap-1.5 font-mono text-[10px] text-zinc-500">
@@ -130,7 +130,7 @@ Skills:
 					</h2>
 
 					<p class="text-sm leading-relaxed text-[#94a3b8]">
-						2+ years of expertise in crafting high-performance, cross-platform applications.
+						3+ years of expertise in crafting high-performance, cross-platform applications.
 						Specializing in
 						<span class="font-medium text-white">React Native</span>,
 						<span class="font-medium text-white">Flutter</span>, and modern web frameworks like
