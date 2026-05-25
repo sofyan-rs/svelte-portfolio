@@ -1,6 +1,6 @@
-import type { ProjectType } from '$lib/types/project.type';
+import type { IProject } from '../types/project.type';
 
-export const myProjects: ProjectType[] = [
+export const projects: IProject[] = [
 	{
 		title: 'Moestream',
 		type: 'Mobile Application',
@@ -9,7 +9,7 @@ export const myProjects: ProjectType[] = [
 		image: 'moestream.webp',
 		link: 'https://github.com/sofyan-rs/moestream/releases',
 		git: 'https://github.com/sofyan-rs/moestream',
-		techUsed: ['React Native', 'Expo', 'Uniwind', 'HeroUI']
+		techUsed: ['React Native', 'Expo', 'Nativewind']
 	},
 	{
 		title: 'KanaChat',
@@ -19,7 +19,7 @@ export const myProjects: ProjectType[] = [
 		image: 'kanachat.webp',
 		link: 'https://github.com/sofyan-rs/kanachat/releases',
 		git: 'https://github.com/sofyan-rs/kanachat',
-		techUsed: ['Flutter', 'Firebase', 'Google Vertex AI']
+		techUsed: ['Flutter', 'Firebase']
 	},
 	{
 		title: 'BacaKomik V2 - Mobile Apps',
@@ -98,7 +98,7 @@ export const myProjects: ProjectType[] = [
 		image: 'okane.webp',
 		link: 'https://okane.sofyan.id',
 		git: 'https://github.com/sofyan-rs/fe-finance-nextjs',
-		techUsed: ['NextJS', 'TailwindCSS', 'ShadcnUI']
+		techUsed: ['Next.js', 'TailwindCSS', 'Shadcn UI']
 	},
 	{
 		title: 'Okane Backend',
@@ -117,7 +117,7 @@ export const myProjects: ProjectType[] = [
 		image: 'manhwaindo.webp',
 		link: 'https://stag.manhwaindo.com',
 		git: null,
-		techUsed: ['Wordpress']
+		techUsed: ['WordPress']
 	},
 	{
 		title: 'Kana Quest',
@@ -127,7 +127,7 @@ export const myProjects: ProjectType[] = [
 		image: 'kana-quest.webp',
 		link: 'https://kana-quest.netlify.app/',
 		git: 'https://github.com/sofyan-rs/kana-quest',
-		techUsed: ['Sveltekit', 'TailwindCSS']
+		techUsed: ['SvelteKit', 'TailwindCSS']
 	},
 	{
 		title: 'Fenrir Realm',
@@ -136,9 +136,8 @@ export const myProjects: ProjectType[] = [
 		image: 'fenrir.webp',
 		link: 'https://fenrirealm.com/',
 		git: null,
-		techUsed: ['Sveltekit', 'TailwindCSS', 'ShadcnUI']
+		techUsed: ['SvelteKit', 'TailwindCSS', 'Shadcn UI']
 	},
-
 	{
 		title: 'Tantri Kitchen Display System',
 		type: 'Web Development',
@@ -147,7 +146,7 @@ export const myProjects: ProjectType[] = [
 		image: 'tantri-kitchen-display.webp',
 		link: null,
 		git: null,
-		techUsed: ['Sveltekit', 'TailwindCSS']
+		techUsed: ['SvelteKit', 'TailwindCSS']
 	},
 	{
 		title: 'SSD Finance',
