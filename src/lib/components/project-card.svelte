@@ -2,9 +2,9 @@
 	import type { IProject } from '$lib/types/project.type';
 	import { Github, ExternalLink } from 'lucide-svelte';
 
-	export let project: IProject;
+	let { project }: { project: IProject } = $props();
 
-	let imageError = false;
+	let imageError = $state(false);
 
 	// Determine tag-specific styles based on technology
 	const getTechTagStyle = (tech: string) => {
@@ -63,7 +63,7 @@
 					alt={project.title}
 					class="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.02]"
 					referrerpolicy="no-referrer"
-					on:error={() => (imageError = true)}
+					onerror={() => (imageError = true)}
 				/>
 			{:else}
 				<div

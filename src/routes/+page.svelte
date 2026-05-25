@@ -6,9 +6,6 @@
 	import ProjectCard from '$lib/components/project-card.svelte';
 
 	import {
-		Github,
-		Linkedin,
-		Mail,
 		FileCode2,
 		Briefcase,
 		Code2,
@@ -19,42 +16,40 @@
 		Download
 	} from 'lucide-svelte';
 
-	let searchQuery = '';
-	let selectedType: 'All' | 'Mobile' | 'Web' | 'Backend' = 'All';
-	let selectedTech: string | null = null;
+	let searchQuery = $state('');
+	let selectedType = $state<'All' | 'Mobile' | 'Web' | 'Backend'>('All');
+	let selectedTech = $state<string | null>(null);
 
-	// Unique tech list
-	$: allUniqueTech = [...new Set(projects.flatMap((p) => p.techUsed))].sort();
+	const filteredProjects = $derived(
+		projects.filter((project) => {
+			const matchesSearch =
+				project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+				project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+				project.techUsed.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
 
-	// Filtered projects
-	$: filteredProjects = projects.filter((project) => {
-		const matchesSearch =
-			project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-			project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-			project.techUsed.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
+			const matchesType =
+				selectedType === 'All' ||
+				(selectedType === 'Mobile' && project.type === 'Mobile Application') ||
+				(selectedType === 'Web' &&
+					(project.type === 'Web Development' || project.type === 'Website Development')) ||
+				(selectedType === 'Backend' && project.type === 'Backend Development');
 
-		const matchesType =
-			selectedType === 'All' ||
-			(selectedType === 'Mobile' && project.type === 'Mobile Application') ||
-			(selectedType === 'Web' &&
-				(project.type === 'Web Development' || project.type === 'Website Development')) ||
-			(selectedType === 'Backend' && project.type === 'Backend Development');
+			const matchesTech = !selectedTech || project.techUsed.includes(selectedTech);
 
-		const matchesTech = !selectedTech || project.techUsed.includes(selectedTech);
+			return matchesSearch && matchesType && matchesTech;
+		})
+	);
 
-		return matchesSearch && matchesType && matchesTech;
-	});
-
-	// Stats
-	$: totalProjectsCount = projects.length;
-
-	$: mobileProjectsCount = projects.filter((p) => p.type === 'Mobile Application').length;
-
-	$: webProjectsCount = projects.filter(
-		(p) => p.type === 'Web Development' || p.type === 'Website Development'
-	).length;
-
-	$: backendProjectsCount = projects.filter((p) => p.type === 'Backend Development').length;
+	const totalProjectsCount = $derived(projects.length);
+	const mobileProjectsCount = $derived(
+		projects.filter((p) => p.type === 'Mobile Application').length
+	);
+	const webProjectsCount = $derived(
+		projects.filter((p) => p.type === 'Web Development' || p.type === 'Website Development').length
+	);
+	const backendProjectsCount = $derived(
+		projects.filter((p) => p.type === 'Backend Development').length
+	);
 
 	const handleClearFilters = () => {
 		searchQuery = '';
@@ -150,7 +145,7 @@ Skills:
 					</h2>
 
 					<div class="flex flex-wrap gap-1.5">
-						{#each ['React Native', 'Flutter', 'NextJS', 'SvelteKit', 'HonoJS'] as tech}
+						{#each ['React Native', 'Flutter', 'NextJS', 'SvelteKit', 'HonoJS'] as tech, idx (idx)}
 							<span
 								class="rounded-sm border border-[#2d3139] bg-[#1a1c23] px-2 py-1 font-mono text-[10px] text-[#94a3b8]"
 							>
@@ -184,7 +179,7 @@ Skills:
 
 					<!-- Download Resume -->
 					<button
-						on:click={downloadResume}
+						onclick={downloadResume}
 						class="flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-white py-2.5 font-mono text-[10.5px] font-bold tracking-wider text-zinc-950 uppercase transition-all duration-200 select-none hover:bg-zinc-200 active:bg-zinc-300"
 					>
 						<Download class="h-3.5 w-3.5" />
@@ -246,9 +241,9 @@ Skills:
 					</span>
 
 					<div class="flex flex-wrap gap-1.5">
-						{#each skills.languages as tech}
+						{#each skills.languages as tech, idx (idx)}
 							<button
-								on:click={() => (selectedTech = selectedTech === tech ? null : tech)}
+								onclick={() => (selectedTech = selectedTech === tech ? null : tech)}
 								class={`cursor-pointer rounded border px-2 py-1 font-mono text-[11px] transition-all ${
 									selectedTech === tech
 										? 'border-purple-700/60 bg-purple-950/40 text-purple-300'
@@ -268,9 +263,9 @@ Skills:
 					</span>
 
 					<div class="flex flex-wrap gap-1.5">
-						{#each skills.mobile as tech}
+						{#each skills.mobile as tech, idx (idx)}
 							<button
-								on:click={() => (selectedTech = selectedTech === tech ? null : tech)}
+								onclick={() => (selectedTech = selectedTech === tech ? null : tech)}
 								class={`cursor-pointer rounded border px-2 py-1 font-mono text-[11px] transition-all ${
 									selectedTech === tech
 										? 'border-blue-700/60 bg-blue-950/40 text-blue-400'
@@ -290,9 +285,9 @@ Skills:
 					</span>
 
 					<div class="flex flex-wrap gap-1.5">
-						{#each skills.frontend as tech}
+						{#each skills.frontend as tech, idx (idx)}
 							<button
-								on:click={() => (selectedTech = selectedTech === tech ? null : tech)}
+								onclick={() => (selectedTech = selectedTech === tech ? null : tech)}
 								class={`cursor-pointer rounded border px-2 py-1 font-mono text-[11px] transition-all ${
 									selectedTech === tech
 										? 'border-emerald-700/60 bg-emerald-950/40 text-emerald-300'
@@ -312,9 +307,9 @@ Skills:
 					</span>
 
 					<div class="flex flex-wrap gap-1.5">
-						{#each skills.backend as tech}
+						{#each skills.backend as tech, idx (idx)}
 							<button
-								on:click={() => (selectedTech = selectedTech === tech ? null : tech)}
+								onclick={() => (selectedTech = selectedTech === tech ? null : tech)}
 								class={`cursor-pointer rounded border px-2 py-1 font-mono text-[11px] transition-all ${
 									selectedTech === tech
 										? 'border-rose-700/60 bg-rose-950/40 text-rose-300'
@@ -332,7 +327,7 @@ Skills:
 		<!-- Tabs + Search -->
 		<section class="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
 			<div class="flex flex-wrap gap-1.5 self-start sm:self-auto">
-				{#each ['All', 'Mobile', 'Web', 'Backend'] as type}
+				{#each ['All', 'Mobile', 'Web', 'Backend'] as type, idx (idx)}
 					{@const count =
 						type === 'All'
 							? totalProjectsCount
@@ -343,7 +338,7 @@ Skills:
 									: backendProjectsCount}
 
 					<button
-						on:click={() => (selectedType = type as typeof selectedType)}
+						onclick={() => (selectedType = type as typeof selectedType)}
 						class={`cursor-pointer rounded border px-3 py-1.5 font-mono text-[11px] uppercase transition-all ${
 							selectedType === type
 								? 'border-white bg-white font-bold text-zinc-950'
@@ -368,7 +363,7 @@ Skills:
 
 				{#if searchQuery}
 					<button
-						on:click={() => (searchQuery = '')}
+						onclick={() => (searchQuery = '')}
 						class="absolute top-1/2 right-3 -translate-y-1/2 text-zinc-500 hover:text-white"
 					>
 						<X class="h-3.5 w-3.5" />
@@ -381,7 +376,7 @@ Skills:
 		<section class="mb-14 flex-1">
 			{#if filteredProjects.length > 0}
 				<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-					{#each filteredProjects as project}
+					{#each filteredProjects as project, idx (idx)}
 						<ProjectCard {project} />
 					{/each}
 				</div>
@@ -394,7 +389,7 @@ Skills:
 					<span class="font-mono text-xs text-[#94a3b8]"> No projects found. </span>
 
 					<button
-						on:click={handleClearFilters}
+						onclick={handleClearFilters}
 						class="mt-2 cursor-pointer font-mono text-[11px] text-zinc-500 underline hover:text-[#94a3b8]"
 					>
 						Reset active parameters / stack categories
@@ -413,11 +408,11 @@ Skills:
 			</h2>
 
 			<div class="relative ml-2 space-y-10 border-l border-[#262626] pl-6">
-				{#each experiences as exp, idx}
+				{#each experiences as exp, idx (idx)}
 					<div class="group relative">
 						<span
 							class="absolute top-[7px] -left-[29px] h-2.5 w-2.5 rounded-full border border-[#262626] bg-[#111113] transition-all group-hover:border-blue-400 group-hover:bg-blue-500"
-						/>
+						></span>
 
 						<div
 							class="mb-2.5 flex flex-col items-start gap-1.5 md:flex-row md:items-center md:justify-between"
@@ -455,7 +450,7 @@ Skills:
 		>
 			<div
 				class="pointer-events-none absolute top-0 right-0 h-32 w-32 rounded-full bg-blue-500/5 blur-3xl"
-			/>
+			></div>
 
 			<div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
 				<div>
