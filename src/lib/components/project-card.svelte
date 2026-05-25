@@ -12,6 +12,8 @@
 
 		if (t.includes('react native')) return 'bg-[#1a1c23] text-blue-400 border-[#2d3139]';
 
+		if (t.includes('reactjs')) return 'bg-[#1a1c23] text-blue-400 border-[#2d3139]';
+
 		if (t.includes('flutter')) return 'bg-[#1a1c23] text-cyan-400 border-[#2d3139]';
 
 		if (t.includes('sveltekit') || t.includes('svelte'))
@@ -70,7 +72,7 @@
 					class="flex h-full w-full flex-col justify-between bg-[#0d0d0f] p-4 transition-colors duration-300 select-none group-hover:bg-[#121214]"
 				>
 					<div class="flex items-center justify-between">
-						<span class="font-mono text-[9px] tracking-wider text-[#525252] uppercase">
+						<span class="font-mono text-[9px] tracking-wider text-[#838383] uppercase">
 							Cover Placeholder
 						</span>
 
@@ -86,14 +88,14 @@
 							{project.title}
 						</p>
 
-						<p class="mt-1.5 font-mono text-[9px] text-[#525252]">
+						<p class="mt-1.5 font-mono text-[9px] text-[#838383]">
 							{project.type}
 						</p>
 					</div>
 
-					<div class="flex justify-between font-mono text-[8.5px] text-[#525252]/80">
+					<div class="flex justify-between font-mono text-[8.5px] text-[#838383]/80">
 						<span>[IMAGE_OFFLINE]</span>
-						<span class="text-zinc-600">/src/images/projects/</span>
+						<span class="text-zinc-400">/src/images/projects/</span>
 					</div>
 				</div>
 			{/if}
@@ -164,7 +166,7 @@
 			{/if}
 
 			{#if !project.link && !project.git}
-				<span class="text-[10px] text-zinc-600 italic"> Corporate IP </span>
+				<span class="text-[10px] text-zinc-400 italic"> Corporate IP </span>
 			{/if}
 		</div>
 	</div>

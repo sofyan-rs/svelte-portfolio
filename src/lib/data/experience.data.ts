@@ -14,5 +14,12 @@ export const experiences: IExperience[] = [
 		period: '2023 — 2024',
 		description:
 			'Crafted dense administrative dashboards, real-time kitchen displays, point-of-sale applications, and interactive public online ordering gateways. Working with modern web stacks (React, SvelteKit, Svelte, Tailwind CSS, NextJS) to ensure pixel-perfect fidelity, snappy responsiveness, and deep search optimization.'
+	},
+	{
+		role: 'Freelance Developer',
+		company: 'Self-Employed',
+		period: '2020 — Present',
+		description:
+			'Delivering end-to-end freelance projects across mobile and web for various clients. Work spans requirement gathering, UI/UX implementation, and deployment — covering mobile apps with React Native and Flutter, web frontends with React and SvelteKit, and lightweight backends with HonoJS.'
 	}
 ];
