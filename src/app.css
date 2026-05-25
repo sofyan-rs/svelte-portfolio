@@ -1,88 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Geist:wght@300;400;500;600;700;800&family=Geist+Mono:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss';
-@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-	--cursor-color: #fff;
-	--cursor-width: 2px;
+@theme {
+	--font-sans: 'Geist', 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+	--font-display: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
-	font-family: 'JetBrains Mono', monospace;
+	font-family: var(--font-sans);
+	background-color: #0a0a0b;
+	color: #e2e8f0;
 }
 
-button {
-	@apply cursor-pointer;
-}
-
-*::-webkit-scrollbar {
-	@apply w-[6px];
-}
-*::-webkit-scrollbar-track {
-	@apply bg-neutral-200;
-}
-*::-webkit-scrollbar-thumb {
-	@apply bg-blue-900;
-}
-.dark *::-webkit-scrollbar-track {
-	@apply bg-neutral-700;
-}
-
-@keyframes scroll {
-	0% {
+/* Custom fade animations */
+@keyframes fadeIn {
+	from {
 		opacity: 0;
+		transform: translateY(8px);
 	}
-	10% {
-		transform: translateY(0);
+	to {
 		opacity: 1;
-	}
-	100% {
-		transform: translateY(15px);
-		opacity: 0;
+		transform: translateY(0);
 	}
 }
 
-.header {
-	@apply bg-blue-950/30;
-}
-.header.scroll {
-	@apply bg-blue-950/90;
-}
-.menu {
-	@apply max-h-0 overflow-hidden transition-all duration-500 lg:max-h-[200px];
-}
-.menu.show {
-	@apply max-h-[calc(100dvh-72px)];
-}
-
-.scrolling {
-	@apply h-2 w-[3px] rounded-full bg-white/80;
-	animation-name: scroll;
-	animation-duration: 1.5s;
-	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-	animation-iteration-count: infinite;
-}
-
-.project-card:hover img {
-	@apply scale-110;
-}
-.project-card:hover .show-detail {
-	@apply opacity-100;
-}
-
-.load-more .icon {
-	@apply max-w-0 -rotate-90 animate-pulse overflow-hidden transition-all;
-}
-.load-more:hover .icon {
-	@apply max-w-5 rotate-0;
-}
-
-.skill-card .list {
-	@apply max-h-0 overflow-hidden transition-all duration-300;
-}
-.skill-card .list.active {
-	@apply max-h-96;
-}
-.skill-card .title.active,
-.skill-card:hover .title {
-	@apply bg-blue-950 text-white transition-all;
+.animate-fade-in {
+	animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
