@@ -15,12 +15,12 @@
 		<div>
 			<h3 class="font-display mb-2 flex items-start gap-2 text-base font-bold text-white">
 				<Sparkles class="mt-1 h-4 w-4 shrink-0 text-blue-400" />
-				<span>Open to Work — Let's Talk</span>
+				<span>Available — Let's Build Something</span>
 			</h3>
 
 			<p class="mb-1 text-xs leading-relaxed text-[#94a3b8]">
-				Looking for a developer to bring your idea to life? I take on select projects in mobile and
-				web — from quick prototypes to long-term builds.
+				Need something built? I work with founders, teams, and agencies on mobile and web — from
+				0→1 prototypes to production-ready systems.
 			</p>
 		</div>
 

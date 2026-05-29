@@ -44,14 +44,16 @@
 				</h2>
 
 				<p class="text-sm leading-relaxed text-[#94a3b8]">
-					3+ years of expertise in crafting high-performance, cross-platform applications.
-					Specializing in
-					<span class="font-medium text-white">React Native</span>,
-					<span class="font-medium text-white">Flutter</span>, and modern web frameworks like
+					I build apps that work — across every screen, at every scale. 3+ years shipping
+					production
+					<span class="font-medium text-white">React Native</span>
+					and
+					<span class="font-medium text-white">Flutter</span>
+					apps alongside
 					<span class="font-medium text-white">Next.js</span>
 					and
-					<span class="font-medium text-white">SvelteKit</span>. Currently scaling solutions at
-					Sasana Digital.
+					<span class="font-medium text-white">SvelteKit</span>. Currently building mobile at Sasana
+					Digital.
 				</p>
 			</section>
 

@@ -10,7 +10,7 @@
 		class="mb-8 flex items-center gap-2 font-mono text-[10px] font-bold tracking-[0.2em] text-[#838383] uppercase"
 	>
 		<Briefcase class="h-4 w-4 text-zinc-400" />
-		PROFESSIONAL_TIMELINE_DETAILS
+		WORK_HISTORY
 	</h2>
 
 	<div class="relative ml-2 space-y-10 border-l border-[#262626] pl-6">

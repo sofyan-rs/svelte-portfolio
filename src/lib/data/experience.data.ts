@@ -6,20 +6,20 @@ export const experiences: IExperience[] = [
 		company: 'Sasana Digital',
 		period: '2024 — Present',
 		description:
-			'Developing high-concurrency mobile ordering, POS, scanning, and management platforms for clients in the restaurant, logistics, and retail spaces. Specialized in performance tuning React Native and Flutter codebases, native API integrations, and offline synchronization mechanisms.'
+			'Building mobile-first platforms for restaurants, logistics, and retail — ordering systems, POS, scanners, and ops tools. Deep work in React Native and Flutter: performance profiling, native module integrations, and offline-first sync.'
 	},
 	{
 		role: 'Frontend Developer',
 		company: 'Sasana Digital',
 		period: '2023 — 2024',
 		description:
-			'Crafted dense administrative dashboards, real-time kitchen displays, point-of-sale applications, and interactive public online ordering gateways. Working with modern web stacks (React, SvelteKit, Svelte, Tailwind CSS, NextJS) to ensure pixel-perfect fidelity, snappy responsiveness, and deep search optimization.'
+			'Built dense admin dashboards, real-time kitchen displays, POS interfaces, and customer-facing ordering flows. Worked across React, SvelteKit, and Next.js — prioritizing fast load times, clean UI fidelity, and solid SEO.'
 	},
 	{
 		role: 'Freelance Developer',
 		company: 'Self-Employed',
 		period: '2020 — Present',
 		description:
-			'Delivering end-to-end freelance projects across mobile and web for various clients. Work spans requirement gathering, UI/UX implementation, and deployment — covering mobile apps with React Native and Flutter, web frontends with React and SvelteKit, and lightweight backends with HonoJS.'
+			'End-to-end freelance builds across mobile and web — from scoping to production deploy. Mobile with React Native and Flutter, web with React and SvelteKit, backends with HonoJS.'
 	}
 ];

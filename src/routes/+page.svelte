@@ -80,7 +80,7 @@
 				</h2>
 
 				<p class="mt-1 font-mono text-xs text-zinc-400">
-					Explore projects by stack, type, or keyword
+					Filter by stack, type, or keyword — or just browse.
 				</p>
 			</div>
 
