@@ -19,8 +19,7 @@
 			</h3>
 
 			<p class="mb-1 text-xs leading-relaxed text-[#94a3b8]">
-				Need something built? I work with founders, teams, and agencies on mobile and web — from
-				0→1 prototypes to production-ready systems.
+				Have a project in mind? I'm open to mobile and web work — reach out and let's talk.
 			</p>
 		</div>
 
