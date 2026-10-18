@@ -32,14 +32,13 @@ export const projects: IProject[] = [
 		techUsed: ['Flutter', 'Firebase']
 	},
 	{
-		title: 'Tantri Inventory Scanner - Mobile Apps',
+		title: 'MyCalculator',
 		type: 'Mobile Application',
-		description:
-			'Mobile App for QR Scanner Invoice that used in inventory in BackOffice. Created using React Native',
-		image: 'tantri-scanner-app.webp',
-		link: 'https://play.google.com/store/apps/details?id=com.tantri.scanner',
-		git: null,
-		techUsed: ['React Native', 'Nativewind']
+		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
+		image: 'mycalculator.webp',
+		link: 'https://github.com/sofyan-rs/mycalculator/releases',
+		git: 'https://github.com/sofyan-rs/mycalculator',
+		techUsed: ['Flutter']
 	},
 	{
 		title: 'Tantri POS - Mobile Apps',
@@ -62,81 +61,14 @@ export const projects: IProject[] = [
 		techUsed: ['ReactJS', 'TailwindCSS']
 	},
 	{
-		title: 'MyCalculator',
-		type: 'Mobile Application',
-		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
-		image: 'mycalculator.webp',
-		link: 'https://github.com/sofyan-rs/mycalculator/releases',
-		git: 'https://github.com/sofyan-rs/mycalculator',
-		techUsed: ['Flutter']
-	},
-	{
-		title: 'MarkNotes',
+		title: 'Tantri Inventory Scanner - Mobile Apps',
 		type: 'Mobile Application',
 		description:
-			'MarkNotes is An Open Source Simple Notes Application with markdown support build with Flutter.',
-		image: 'marknotes.webp',
-		link: 'https://github.com/sofyan-rs/marknotes/releases',
-		git: 'https://github.com/sofyan-rs/marknotes',
-		techUsed: ['Flutter']
-	},
-	{
-		title: 'BacaKomik - Mobile Apps',
-		type: 'Mobile Application',
-		description:
-			'BacaKomik is a mobile application for reading manga which I create when I am bored and want to learn about React Native Features.',
-		image: 'bacakomik-app.webp',
-		link: 'https://drive.google.com/drive/u/0/folders/1fI_wmyeoz70qmBxqN3ruha-yblToVmQ0',
+			'Mobile App for QR Scanner Invoice that used in inventory in BackOffice. Created using React Native',
+		image: 'tantri-scanner-app.webp',
+		link: 'https://play.google.com/store/apps/details?id=com.tantri.scanner',
 		git: null,
-		techUsed: ['React Native', 'Nativewind', 'Firebase']
-	},
-	{
-		title: 'Okane Frontend',
-		type: 'Web Development',
-		description:
-			'Okane Frontend is a web application for Okane App, a personal finance management application. It is built using NextJS and ShadCN UI.',
-		image: 'okane.webp',
-		link: 'https://okane.sofyan.id',
-		git: 'https://github.com/sofyan-rs/fe-finance-nextjs',
-		techUsed: ['Next.js', 'TailwindCSS', 'Shadcn UI']
-	},
-	{
-		title: 'Okane Backend',
-		type: 'Backend Development',
-		description:
-			'Okane Backend is a backend service for Okane App, a personal finance management application. It is built using Bun, HonoJS, and PostgreSQL.',
-		image: 'okane-api.webp',
-		link: 'https://finance-tracker.apidog.io',
-		git: 'https://github.com/sofyan-rs/be-finance-honojs',
-		techUsed: ['Bun', 'HonoJS', 'PostgreSQL']
-	},
-	{
-		title: 'ManhwaIndo',
-		type: 'Website Development',
-		description: 'ManhwaIndo is a website for reading Manhwa, created using Wordpress.',
-		image: 'manhwaindo.webp',
-		link: 'https://stag.manhwaindo.com',
-		git: null,
-		techUsed: ['WordPress']
-	},
-	{
-		title: 'Kana Quest',
-		type: 'Web Development',
-		description:
-			'Kana Quest is a web to test your knowledge in Japanese Hiragana, Katakana, and Kanji.',
-		image: 'kana-quest.webp',
-		link: 'https://kana-quest.netlify.app/',
-		git: 'https://github.com/sofyan-rs/kana-quest',
-		techUsed: ['SvelteKit', 'TailwindCSS']
-	},
-	{
-		title: 'Fenrir Realm',
-		type: 'Web Development',
-		description: 'Fenrir Realm is a portal for reading translated Novel created using SvelteKit.',
-		image: 'fenrir.webp',
-		link: 'https://fenrirealm.com/',
-		git: null,
-		techUsed: ['SvelteKit', 'TailwindCSS', 'Shadcn UI']
+		techUsed: ['React Native', 'Nativewind']
 	},
 	{
 		title: 'Tantri Kitchen Display System',
