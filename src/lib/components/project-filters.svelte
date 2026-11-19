@@ -6,13 +6,15 @@
 		searchQuery = $bindable(),
 		totalProjectsCount,
 		mobileProjectsCount,
+		desktopProjectsCount,
 		webProjectsCount,
 		backendProjectsCount
 	}: {
-		selectedType: 'All' | 'Mobile' | 'Web' | 'Backend';
+		selectedType: 'All' | 'Mobile' | 'Desktop' | 'Web' | 'Backend';
 		searchQuery: string;
 		totalProjectsCount: number;
 		mobileProjectsCount: number;
+		desktopProjectsCount: number;
 		webProjectsCount: number;
 		backendProjectsCount: number;
 	} = $props();
@@ -20,6 +22,7 @@
 	const counts: Record<string, number> = $derived({
 		All: totalProjectsCount,
 		Mobile: mobileProjectsCount,
+		Desktop: desktopProjectsCount,
 		Web: webProjectsCount,
 		Backend: backendProjectsCount
 	});
@@ -27,7 +30,7 @@
 
 <section class="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
 	<div class="flex flex-wrap gap-1.5 self-start sm:self-auto">
-		{#each ['All', 'Mobile', 'Web', 'Backend'] as type (type)}
+		{#each ['All', 'Mobile', 'Desktop', 'Web', 'Backend'] as type (type)}
 			<button
 				onclick={() => (selectedType = type as typeof selectedType)}
 				class={`cursor-pointer rounded border px-3 py-1.5 font-mono text-[11px] uppercase transition-all ${

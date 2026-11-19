@@ -1,6 +1,11 @@
 export interface IProject {
 	title: string;
-	type: 'Mobile Application' | 'Web Development' | 'Backend Development' | 'Website Development';
+	type:
+		| 'Mobile Application'
+		| 'Desktop Application'
+		| 'Web Development'
+		| 'Backend Development'
+		| 'Website Development';
 	description: string;
 	image: string;
 	link: string | null;

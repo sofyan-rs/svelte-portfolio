@@ -45,15 +45,7 @@
 
 				<p class="text-sm leading-relaxed text-[#94a3b8]">
 					I build apps that work — across every screen, at every scale. 3+ years shipping
-					production
-					<span class="font-medium text-white">React Native</span>
-					and
-					<span class="font-medium text-white">Flutter</span>
-					apps alongside
-					<span class="font-medium text-white">Next.js</span>
-					and
-					<span class="font-medium text-white">SvelteKit</span>. Currently building mobile at Sasana
-					Digital.
+					production mobile apps and web apps. Currently building mobile at Sasana Digital.
 				</p>
 			</section>
 

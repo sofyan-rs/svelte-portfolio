@@ -2,101 +2,115 @@ import type { IProject } from '../types/project.type';
 
 export const projects: IProject[] = [
 	{
-		title: 'Moestream',
+		title: 'Yoru',
 		type: 'Mobile Application',
 		description:
-			'Moestream is a simple anime streaming app for Android and iOS. Browse series, pick sources, and resume where you left off—watchlist and history are stored only on the device.',
+			'A comic reader for manga, manhwa, and manhua on Android, iOS, and desktop. Formerly BacaKomik.',
+		image: 'yoru.webp',
+		link: 'https://yoru.kurodev.org',
+		git: 'https://github.com/sofyan-rs/yoru-comic-app',
+		techUsed: ['Flutter']
+	},
+	{
+		title: 'Dotnote',
+		type: 'Desktop Application',
+		description: 'A minimal markdown notes app for desktop that keeps your notes as plain files.',
+		image: 'dotnote.webp',
+		link: 'https://github.com/sofyan-rs/dotnote-gpui/releases/latest',
+		git: 'https://github.com/sofyan-rs/dotnote-gpui',
+		techUsed: ['Rust', 'GPUI']
+	},
+	{
+		title: 'Dotnote for Android',
+		type: 'Mobile Application',
+		description: 'The Android version of Dotnote for writing and editing markdown notes on the go.',
+		image: 'dotnote-android.webp',
+		link: 'https://github.com/sofyan-rs/dotnote/releases/latest',
+		git: 'https://github.com/sofyan-rs/dotnote',
+		techUsed: ['Kotlin', 'Jetpack Compose']
+	},
+	{
+		title: 'KuVault',
+		type: 'Desktop Application',
+		description: 'A game library and launcher for Windows that keeps all your games in one place.',
+		image: 'kuvault.webp',
+		link: 'https://github.com/sofyan-rs/kuvault/releases/latest',
+		git: 'https://github.com/sofyan-rs/kuvault',
+		techUsed: ['Tauri', 'ReactJS', 'Rust']
+	},
+	{
+		title: 'Moestream',
+		type: 'Mobile Application',
+		description: 'An anime streaming app for Android.',
 		image: 'moestream.webp',
 		link: 'https://github.com/sofyan-rs/moestream/releases',
 		git: 'https://github.com/sofyan-rs/moestream',
-		techUsed: ['React Native', 'Expo', 'Nativewind']
+		techUsed: ['React Native', 'Expo', 'Uniwind']
 	},
 	{
 		title: 'KanaChat',
 		type: 'Mobile Application',
-		description:
-			'KanaChat is An Open Source ChatBot Application using Google Vertex AI build with Flutter.',
+		description: 'An open-source AI chatbot app powered by Google Vertex AI.',
 		image: 'kanachat.webp',
 		link: 'https://github.com/sofyan-rs/kanachat/releases',
 		git: 'https://github.com/sofyan-rs/kanachat',
 		techUsed: ['Flutter', 'Firebase']
 	},
 	{
-		title: 'BacaKomik V2 - Mobile Apps',
-		type: 'Mobile Application',
-		description:
-			'BacaKomik is a mobile application for reading manga that I create after learning Dart & Flutter.',
-		image: 'bacakomik-app-v2.webp',
-		link: 'https://github.com/sofyan-rs/bacakomik-app-release/releases',
-		git: 'https://github.com/sofyan-rs/bacakomik-app-release',
-		techUsed: ['Flutter', 'Firebase']
-	},
-	{
 		title: 'MyCalculator',
 		type: 'Mobile Application',
-		description: 'MyCalculator is An Open Source Simple Calculator Application build with Flutter.',
+		description: 'A simple, open-source calculator app.',
 		image: 'mycalculator.webp',
 		link: 'https://github.com/sofyan-rs/mycalculator/releases',
 		git: 'https://github.com/sofyan-rs/mycalculator',
 		techUsed: ['Flutter']
 	},
 	{
-		title: 'Tantri POS - Mobile Apps',
+		title: 'Tantri POS - Mobile App',
 		type: 'Mobile Application',
 		description:
-			'Mobile App Version of Tantri POS System for managing Online Order for restaurants, cafes, and other culinary businesses. Created using React Native.',
-		image: 'tantri-mobile-app.webp',
+			'A point-of-sale app for restaurants and cafes to take and manage orders on the go.',
+		image: 'tantri-pos-mobile-app.webp',
 		link: 'https://play.google.com/store/apps/details?id=com.tantriapp',
 		git: null,
-		techUsed: ['React Native', 'Nativewind']
+		techUsed: ['React Native', 'Uniwind']
 	},
 	{
-		title: 'Tantri - QR Menu Online Order',
-		type: 'Web Development',
-		description:
-			'Tantri QR Menu is a QR Menu Online Order for restaurants, cafes, and other culinary businesses. Created using using React.js and TailwindCSS.',
-		image: 'menu-tantri.webp',
-		link: 'https://menu.tantri.id/',
-		git: null,
-		techUsed: ['ReactJS', 'TailwindCSS']
-	},
-	{
-		title: 'Tantri Inventory Scanner - Mobile Apps',
+		title: 'Tantri Inventory Scanner - Mobile App',
 		type: 'Mobile Application',
-		description:
-			'Mobile App for QR Scanner Invoice that used in inventory in BackOffice. Created using React Native',
-		image: 'tantri-scanner-app.webp',
+		description: 'A scanner app for checking incoming stock by scanning invoice QR codes.',
+		image: 'tantri-scanner.webp',
 		link: 'https://play.google.com/store/apps/details?id=com.tantri.scanner',
 		git: null,
-		techUsed: ['React Native', 'Nativewind']
+		techUsed: ['React Native', 'Uniwind']
 	},
 	{
 		title: 'Tantri Kitchen Display System',
 		type: 'Web Development',
 		description:
-			'Tantri Kitchen Display is a website designed for kitchen management, displaying real-time lists of orders currently being processed. It serves as an efficient tool for monitoring and coordinating kitchen activities during food preparation.',
+			'A kitchen screen that shows incoming orders in real time so staff can track what to cook next.',
 		image: 'tantri-kitchen-display.webp',
 		link: null,
 		git: null,
 		techUsed: ['SvelteKit', 'TailwindCSS']
 	},
 	{
-		title: 'SSD Finance',
+		title: 'Tantri POS - Web App',
 		type: 'Web Development',
 		description:
-			'SSD Finance is a website for managing financial and cashflow reports for the Sasana Digital Company. Created using ReactJS and AntDesign.',
-		image: 'sasana-finance.webp',
-		link: null,
+			'A web-based point-of-sale system for restaurants and cafes to manage orders and sales.',
+		image: 'tantri-pos-web-app.webp',
+		link: 'https://kasir.tantri.id/',
 		git: null,
-		techUsed: ['ReactJS', 'TailwindCSS', 'Ant Design']
+		techUsed: ['ReactJS', 'TailwindCSS']
 	},
 	{
-		title: 'Tantri - POS System',
+		title: 'Tantri QR Menu - Online Order',
 		type: 'Web Development',
 		description:
-			'Tantri POS is a POS System for managing Online Order for restaurants, cafes, and other culinary businesses. Created using React.js and TailwindCSS.',
-		image: 'kasir-tantri.webp',
-		link: 'https://kasir.tantri.id/',
+			'A digital menu where customers scan a QR code to browse and order from their table.',
+		image: 'tantri-menu.webp',
+		link: 'https://menu.tantri.id/',
 		git: null,
 		techUsed: ['ReactJS', 'TailwindCSS']
 	}

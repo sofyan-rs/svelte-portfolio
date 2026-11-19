@@ -43,7 +43,7 @@
 		<!-- Mobile -->
 		<div>
 			<span class="mb-2 block font-mono text-[9.5px] text-[#838383] uppercase"
-				>Mobile Development</span
+				>Mobile & Desktop</span
 			>
 			<div class="flex flex-wrap gap-1.5">
 				{#each skills.mobile as tech (tech)}

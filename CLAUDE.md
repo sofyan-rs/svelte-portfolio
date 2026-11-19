@@ -33,7 +33,7 @@ To add/update content, edit only these data files — no backend or CMS involved
 
 **Styling** — TailwindCSS v4 with custom theme tokens in `src/app.css`. Color palette is dark (`#0a0a0b` background, `#111113` cards, `#262626` borders). Custom fonts: Geist (sans), Geist Mono (mono), Plus Jakarta Sans (display).
 
-**Project images** live at `static/img/ss-project/<filename>.webp`. The card falls back to a styled placeholder if the image fails to load.
+**Project images** live at `static/img/ss/<filename>.webp`. The card falls back to a styled placeholder if the image fails to load.
 
 **Deployment** — `wrangler.jsonc` targets Cloudflare Workers with `nodejs_compat` flag. The build artifact is `.svelte-kit/cloudflare/_worker.js`.
 

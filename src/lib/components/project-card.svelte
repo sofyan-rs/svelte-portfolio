@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { IProject } from '$lib/types/project.type';
-	import { Github, ExternalLink } from 'lucide-svelte';
+	import { Github, ExternalLink, Download } from 'lucide-svelte';
 
 	let { project }: { project: IProject } = $props();
 
@@ -38,14 +38,21 @@
 		if (type.includes('Mobile')) {
 			return 'bg-purple-950/40 text-purple-300 border-purple-900/60';
 		}
+		if (type.includes('Desktop')) {
+			return 'bg-sky-950/40 text-sky-300 border-sky-900/60';
+		}
 		if (type.includes('Backend')) {
 			return 'bg-[#1a1c23] text-rose-300 border-[#2d3139]';
 		}
 		return 'bg-emerald-950/40 text-emerald-300 border-emerald-900/60';
 	};
 
+	const isDownloadLink = (url: string) =>
+		/\/releases|play\.google\.com|apps\.apple\.com/.test(url);
+
 	const getProjectTypeLabel = (type: string) => {
 		if (type === 'Mobile Application') return 'Mobile';
+		if (type === 'Desktop Application') return 'Desktop';
 		if (type === 'Backend Development') return 'Backend';
 		return 'Web';
 	};
@@ -61,7 +68,7 @@
 		>
 			{#if !imageError}
 				<img
-					src={`/img/ss-project/${project.image}`}
+					src={`/img/ss/${project.image}`}
 					alt={project.title}
 					class="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.02]"
 					referrerpolicy="no-referrer"
@@ -147,8 +154,13 @@
 					referrerpolicy="no-referrer"
 					class="flex items-center gap-1.5 text-[#94a3b8] transition-colors hover:text-white"
 				>
-					<span>Demo</span>
-					<ExternalLink class="h-3.5 w-3.5" />
+					{#if isDownloadLink(project.link)}
+						<span>Download</span>
+						<Download class="h-3.5 w-3.5" />
+					{:else}
+						<span>Visit</span>
+						<ExternalLink class="h-3.5 w-3.5" />
+					{/if}
 				</a>
 			{/if}
 

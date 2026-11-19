@@ -13,7 +13,7 @@
 	import { reveal } from '$lib/utils/reveal';
 
 	let searchQuery = $state('');
-	let selectedType = $state<'All' | 'Mobile' | 'Web' | 'Backend'>('All');
+	let selectedType = $state<'All' | 'Mobile' | 'Desktop' | 'Web' | 'Backend'>('All');
 	let selectedTech = $state<string | null>(null);
 	let visibleCount = $state(6);
 
@@ -27,6 +27,7 @@
 			const matchesType =
 				selectedType === 'All' ||
 				(selectedType === 'Mobile' && project.type === 'Mobile Application') ||
+				(selectedType === 'Desktop' && project.type === 'Desktop Application') ||
 				(selectedType === 'Web' &&
 					(project.type === 'Web Development' || project.type === 'Website Development')) ||
 				(selectedType === 'Backend' && project.type === 'Backend Development');
@@ -40,6 +41,9 @@
 	const totalProjectsCount = $derived(projects.length);
 	const mobileProjectsCount = $derived(
 		projects.filter((p) => p.type === 'Mobile Application').length
+	);
+	const desktopProjectsCount = $derived(
+		projects.filter((p) => p.type === 'Desktop Application').length
 	);
 	const webProjectsCount = $derived(
 		projects.filter((p) => p.type === 'Web Development' || p.type === 'Website Development').length
@@ -99,6 +103,7 @@
 				bind:searchQuery
 				{totalProjectsCount}
 				{mobileProjectsCount}
+				{desktopProjectsCount}
 				{webProjectsCount}
 				{backendProjectsCount}
 			/>

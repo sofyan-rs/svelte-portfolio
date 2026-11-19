@@ -1,6 +1,25 @@
 export const skills = {
-	languages: ['TypeScript', 'JavaScript', 'Dart', 'Swift', 'PHP', 'Python', 'SQL'],
-	mobile: ['React Native', 'Flutter', 'SwiftUI', 'Expo', 'Nativewind'],
+	languages: [
+		'TypeScript',
+		'JavaScript',
+		'Dart',
+		'Swift',
+		'Kotlin',
+		'Rust',
+		'PHP',
+		'Python',
+		'SQL'
+	],
+	mobile: [
+		'React Native',
+		'Flutter',
+		'SwiftUI',
+		'Jetpack Compose',
+		'Expo',
+		'Uniwind',
+		'Tauri',
+		'GPUI'
+	],
 	frontend: [
 		'ReactJS',
 		'Next.js',
